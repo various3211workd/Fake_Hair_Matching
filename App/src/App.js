@@ -12,8 +12,9 @@ import {
   Alert
 } from 'react-native';
 
-//import FetchScreen from './screens/FetchScreen';
+import FetchScreen from './component/FetchScreen';
 import Geolocation from './component/GeolocationExample';
+import MapView from './component/MapView';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -39,14 +40,15 @@ export default class App extends Component<Props> {
             onPress={this._handleButtonPress} />
           <Geolocation />
         </View>
-        <View>
-          
+        <View>          
           <TouchableOpacity onPress={() => Alert.alert('hello')}>
             <Image
               //source={require('./assets/images/.jpg')} 
             />
           </TouchableOpacity>
-          
+        </View>
+        <View>
+          <FetchScreen />
         </View>
       </Swiper>
     );

@@ -5,7 +5,7 @@ import {
 
 import MapView from 'react-native-maps';
 
-class FetchScreen extends React.Component {
+class MapView extends React.Component {
   getInitialState() {
     return {
       region: {
@@ -35,4 +35,4 @@ class FetchScreen extends React.Component {
   }
 }
 
-export default FetchScreen;
+export default MapView;
