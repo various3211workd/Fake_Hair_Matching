@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import {
   StyleSheet
@@ -36,3 +37,4 @@ class MapView extends React.Component {
 }
 
 export default MapView;
+*/

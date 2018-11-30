@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import Swiper from 'react-native-swiper';
 
@@ -13,7 +12,7 @@ import {
 } from 'react-native';
 
 import FetchScreen from './component/FetchScreen';
-import Geolocation from './component/GeolocationExample';
+import Geolocation from './component/GetGeolocatio';
 import MapView from './component/MapView';
 
 type Props = {};
@@ -35,19 +34,12 @@ export default class App extends Component<Props> {
         activeDotColor="#FFFFFFFF"
       >
         <View>
+          <Geolocation />
+        </View>
+        <View>
           <Button
             title="Press me"
             onPress={this._handleButtonPress} />
-          <Geolocation />
-        </View>
-        <View>          
-          <TouchableOpacity onPress={() => Alert.alert('hello')}>
-            <Image
-              //source={require('./assets/images/.jpg')} 
-            />
-          </TouchableOpacity>
-        </View>
-        <View>
           <FetchScreen />
         </View>
       </Swiper>
