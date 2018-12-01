@@ -24,9 +24,10 @@ const styles = StyleSheet.create({
 
 const Login = () => (
     <View style={styles.container}>
-        <TouchableOpacity onPress={() => { Actions.PageA }}>
-            <Text style={styles.linkText}>登録する</Text>
+        <TouchableOpacity onPress={() => { Actions.drawer({ type: ActionConst.RESET }); }}>
+            <Text style={styles.linkText}>Login</Text>
         </TouchableOpacity>
     </View>
 );
+
 export default Login;

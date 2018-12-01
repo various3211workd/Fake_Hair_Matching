@@ -3,8 +3,9 @@ import {
     Scene,
     Router,
     Drawer,
-    DrawerContent,
 } from 'react-native-router-flux';
+
+import DrawerConponent from './component/Drawer';
 
 import PageA from './screens/PageA';
 import PageB from './screens/PageB';
@@ -20,15 +21,28 @@ const RouterComponent = () => {
                 <Scene key="LoginHome" initial component={LoginHome} title="LoginHome" />
                 <Scene key="Login" component={Login} title="Login" />
                 <Scene key="Signup" component={Signup} title="Signup" />
-                
+                <Scene key="drawer" hideNavBar panHandlers={null}>
                 <Drawer
                     drawerWidth={ 300 }
-                    contentComponent={DrawerContent}
+                    contentComponent={DrawerConponent}
                 >
-                    <Scene key="pageA" component={PageA} title="PageA" />
-                    <Scene key="pageB" component={PageB} title="PageB" />
-                    <Scene key="pageC" component={PageC} title="PageC" />
+                    <Scene 
+                        key="PageA"
+                        initial component={PageA} 
+                        title="PageA"
+                    />
+                    <Scene 
+                        key="PageB" 
+                        component={PageB} 
+                        title="PageB" 
+                    />
+                    <Scene 
+                        key="PageC" 
+                        component={PageC} 
+                        title="PageC" 
+                    />
                 </Drawer>
+                </Scene>
             </Scene>
         </Router>
     )

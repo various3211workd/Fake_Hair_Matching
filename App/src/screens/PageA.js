@@ -4,6 +4,8 @@ import {
     Text,
     TouchableOpacity,
     StyleSheet,
+    Button,
+    SafeAreaView,
 } from 'react-native';
 import {
     Actions,
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
 
 const PageA = () => (
     <View style={styles.container}>
-        <TouchableOpacity onPress={Actions.pageB}>
+        <TouchableOpacity onPress={Actions.PageB}>
             <Text style={styles.linkText}>Link</Text>
         </TouchableOpacity>
     </View>

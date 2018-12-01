@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 
 const PageC = () => (
     <View style={styles.container}>
-        <TouchableOpacity onPress={() => { Actions.pageB({ type: ActionConst.RESET }); }}>
+        <TouchableOpacity onPress={Actions.PageA}>
             <Text style={styles.linkText}>Home</Text>
         </TouchableOpacity>
     </View>
