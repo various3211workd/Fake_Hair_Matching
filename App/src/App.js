@@ -1,3 +1,4 @@
+/*
 import React, {Component} from 'react';
 import Swiper from 'react-native-swiper';
 
@@ -15,8 +16,9 @@ import FetchScreen from './component/FetchScreen';
 import Geolocation from './component/GetGeolocatio';
 import MapView from './component/MapView';
 
-type Props = {};
-export default class App extends Component<Props> {
+//type Props = {};
+//export default class App extends Component<Props> {
+export default class App extends Component {
 
   _handleButtonPress = () => {
     Alert.alert(
@@ -43,6 +45,19 @@ export default class App extends Component<Props> {
           <FetchScreen />
         </View>
       </Swiper>
+    );
+  }
+}
+*/
+import React, {Component} from 'react';
+
+import Router from './Router';
+ 
+type Props = {};
+export default class App extends Component<Props> {
+  render() {
+    return (
+      <Router />
     );
   }
 }
