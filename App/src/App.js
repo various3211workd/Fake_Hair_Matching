@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 
 import Router from './Router';
  
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
-    return (
-      <Router />
-    );
+  return (
+    <Router />
+  );
   }
 }

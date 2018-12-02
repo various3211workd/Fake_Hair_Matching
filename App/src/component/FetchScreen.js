@@ -39,7 +39,7 @@ class FetchScreen extends React.Component {
                   style={styles.movieText}
                   onPress={() => Alert.alert(item.title)}
                 >
-                  {item.releaseYear}{'\n\t'}{item.title}
+                  {item.releaseYear}{'\n  '}{item.title}
                 </Text>
               </View>
             }

@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 
 const PageA = () => (
     <View style={styles.container}>
-        <TouchableOpacity onPress={Actions.PageB}>
+        <TouchableOpacity onPress={Actions.MapScreen}>
             <Text style={styles.linkText}>Link</Text>
         </TouchableOpacity>
     </View>
